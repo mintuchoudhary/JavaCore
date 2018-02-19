@@ -53,9 +53,9 @@ public class ThreadPoolByExecutorService {
 		for (int i = 0; i < 10; i++) {
 			Runnable worker = new WorkerThread("" + i);
 			executor.execute(worker);
-		    //  executor.submit(worker); //execute() and submit() both will work for Runnable
+		//  executor.submit(worker); //execute() and submit() both will work for Runnable
 		}
-	    //	executor.submit(thread);  // only submit works for Callable
+	//	executor.submit(thread);  // only submit works for Callable
 		executor.shutdown();
 
 	}
