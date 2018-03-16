@@ -42,6 +42,7 @@ class Product {
 		int hashcode = 0;
 		hashcode = price * 20;
 		hashcode += item.hashCode();
+	//Simplest way: To use all variables and create a sum of all hashcode e.g return price+item.hashCode();
 		return hashcode;
 	}
 
