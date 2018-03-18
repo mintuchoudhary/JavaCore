@@ -1,4 +1,4 @@
-package com.m2.concurrent;
+package com.concurrent;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
@@ -44,7 +44,18 @@ public class CountDownLatchExample  {
 		thread3.start();
 		
 		countDownLatch.await();
-		System.out.println("Main finished: "+Thread.currentThread().getName());
+		System.out.println("Main : Now the cab is moving : "+Thread.currentThread().getName());
 		
 	}
 }
+/*
+Output:
+Passenger arrived: Passenger 3
+Passenger arrived: Passenger 2
+Passenger arrived: Passenger 1
+Passenger boarded the cab:Passenger 2
+Passenger boarded the cab:Passenger 3
+Passenger boarded the cab:Passenger 1
+Main : Now the cab is moving : main
+
+*/
