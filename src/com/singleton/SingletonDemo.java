@@ -1,5 +1,7 @@
 package com.singleton;
 class Singleton {
+	
+	//Lasy Initilization 
 	private static Singleton singletonObj = null;
 	public String s;
 
