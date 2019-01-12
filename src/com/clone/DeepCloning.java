@@ -1,5 +1,8 @@
 package com.clone;
 
+/**
+Deep copy is preferred if an object has references to other objects as fields.
+*/
 class Address {
 	String city;
 	String desc;
