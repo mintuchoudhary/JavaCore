@@ -1,4 +1,4 @@
-package com.m2.treemap;
+package com.treemap;
 
 public class Department {
 	private int id;
