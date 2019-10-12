@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * we can do that using Synchronization but Java 5 java.util.concurrent.atomic 
  * provides wrapper classes for int and long that can be used to achieve this atomic
  *  operation without usage of Synchronization.
+ * 
  * */
 public class JavaAtomic {
 
