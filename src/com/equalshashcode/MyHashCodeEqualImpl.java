@@ -19,7 +19,7 @@ public class MyHashCodeEqualImpl {
 		HashMap<Product, String> hm = new HashMap<Product, String>();
 		hm.put(new Product("PineApple",50), "50");
 		hm.put(new Product("Watermelon",80), "80");
-		hm.put(new Product("Stawberry",120), "120");
+		hm.put(new Product("Stawbery",120), "120");
 		hm.put(new Product("Muskmelon",120), "90");
 		System.out.println(hm);
 		Product searchProduct = new Product("Watermelon",80);
