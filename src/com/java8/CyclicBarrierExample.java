@@ -2,7 +2,10 @@ package com.java8;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
-
+/*
+This method demonstrate that 3 cyclic barrier are 3 person which are acting as threads and will wait for each other 3 to come together and
+then the barrier will be broken n all can move ahead in same car.
+*/
 class CabService implements Runnable {
 	CyclicBarrier cyclicBarrier;
 
