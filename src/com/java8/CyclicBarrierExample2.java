@@ -7,7 +7,7 @@ import java.util.logging.Logger;
  * Java program to demonstrate how to use CyclicBarrier in Java. CyclicBarrier is a
  * new Concurrency Utility added in Java 5 Concurrent package.
  *
- * @author Javin Paul
+ *
  */
 public class CyclicBarrierExample {
 
@@ -57,7 +57,7 @@ public class CyclicBarrierExample {
      
     }
 }
-
+/*
 Output:
 Thread 1 is waiting on barrier
 Thread 3 is waiting on barrier
@@ -67,3 +67,4 @@ Thread 3 has crossed the barrier
 Thread 1 has crossed the barrier
 Thread 2 has crossed the barrier
  
+*/
