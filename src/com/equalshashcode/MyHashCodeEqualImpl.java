@@ -21,6 +21,9 @@ public class MyHashCodeEqualImpl {
 		hm.put(new Product("Watermelon",80), "80");
 		hm.put(new Product("Stawberry",120), "120");
 		hm.put(new Product("Muskmelon",120), "90");
+		//hm.put(new Product("Muskmelon",120), "100");
+		//If we had added above item without overriding hashcode,equal method then it would had overwriten value 90 to 100
+		
 		System.out.println(hm);
 		Product searchProduct = new Product("Watermelon",80);
 		System.out.println(hm.get(searchProduct));
