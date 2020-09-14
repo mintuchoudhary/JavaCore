@@ -22,7 +22,8 @@ public class MyHashCodeEqualImpl {
 		hm.put(new Product("Stawberry",120), "120");
 		hm.put(new Product("Muskmelon",120), "90");
 		//hm.put(new Product("Muskmelon",120), "100");
-		//If we had added above item without overriding hashcode,equal method then it would had overwriten value 90 to 100
+		//If we had added above item without overriding hashcode & equal method then it would had got added and hashmap size would be 6
+		//After overriding hashmap size becomes 5 as 90 value will be overwritten by 100
 		
 		System.out.println(hm);
 		Product searchProduct = new Product("Watermelon",80);
