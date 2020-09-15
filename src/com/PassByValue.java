@@ -1,4 +1,12 @@
-package com;
+
+/*
+@author: Mintu Choudhary
+* Output:
+5
+5
+10
+
+* */
 
 public class PassByValue {
     public static void main(String[] args) {

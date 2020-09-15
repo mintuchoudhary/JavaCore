@@ -1,4 +1,3 @@
-package com;
 
 /**
  * being unchecked exception the child class can have higher order exception

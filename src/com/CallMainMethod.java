@@ -1,4 +1,3 @@
-package com;
 
 public class CallMainMethod {
     static int count = 0;

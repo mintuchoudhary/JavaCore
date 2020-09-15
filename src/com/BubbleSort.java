@@ -1,4 +1,3 @@
-package com;
 
 // Java program for implementation of Bubble Sort
 /*
