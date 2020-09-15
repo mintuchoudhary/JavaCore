@@ -1,4 +1,4 @@
-package com.java8;
+package com;
 
 /**
  * being unchecked exception the child class can have higher order exception

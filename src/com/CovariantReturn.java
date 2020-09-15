@@ -1,4 +1,4 @@
-package com.java8;
+package com;
 
 /**
  * Covariant return type refers to return type of an overriding method.

@@ -1,4 +1,4 @@
-package com.java8;
+package com;
 
 import java.util.Arrays;
 import java.util.Collections;

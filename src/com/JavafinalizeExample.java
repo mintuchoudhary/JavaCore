@@ -1,4 +1,4 @@
-package com.java8;
+package com;
 
 public class JavafinalizeExample {
     public static void main(String[] args)

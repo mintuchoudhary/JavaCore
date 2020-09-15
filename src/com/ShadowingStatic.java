@@ -1,4 +1,4 @@
-package com.statics;
+package com;
 
 /**
  * Here the subclass method will not be called as the method has been shadowed by parent due to static.

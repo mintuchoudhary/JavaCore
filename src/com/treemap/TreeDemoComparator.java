@@ -8,7 +8,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
-import com.m2.treemap.Emp.Department; 
+import com.treemap.Department;
 
 public class TreeDemoComparator {
 	public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package com.java8;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.logging.Level;
@@ -9,7 +10,7 @@ import java.util.logging.Logger;
  *
  *
  */
-public class CyclicBarrierExample {
+public class CyclicBarrierExample2 {
 
     //Runnable task for each thread
     private static class Task implements Runnable {
@@ -27,9 +28,9 @@ public class CyclicBarrierExample {
                 barrier.await();
                 System.out.println(Thread.currentThread().getName() + " has crossed the barrier");
             } catch (InterruptedException ex) {
-                Logger.getLogger(CyclicBarrierExample.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(CyclicBarrierExample2.class.getName()).log(Level.SEVERE, null, ex);
             } catch (BrokenBarrierException ex) {
-                Logger.getLogger(CyclicBarrierExample.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(CyclicBarrierExample2.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
