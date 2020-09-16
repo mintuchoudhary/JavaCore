@@ -4,6 +4,9 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/*submit() - returns a Future method - which as isDone() method
+Future - has get() method to get the result
+*/execute() - returns a void
 
 class WorkerThread implements Runnable {
 
