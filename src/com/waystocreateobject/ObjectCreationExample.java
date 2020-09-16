@@ -11,10 +11,10 @@ import java.lang.reflect.InvocationTargetException;
 
 /*
  * 1) Using new Keyword
- * 2) Using New Instance
+ * 2) Reflection: Using Class.forName() - New Instance
  * 3) Using clone() method
  * 4) Using deserialization
- * 5) Using newInstance() method of Constructor class
+ * 5) Reflection: Using Constructor.getDeclaredConstructor() - newInstance() method of Constructor class
  * 
  * */
 public class ObjectCreationExample implements Cloneable, Serializable {
