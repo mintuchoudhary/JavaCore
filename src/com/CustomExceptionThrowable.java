@@ -7,7 +7,7 @@ class AgeDoesnotMatchException extends Throwable{
    private String name;
    private int age;
    public CustomException(String name, int age){
-      try {
+      try { //check if we remove this method require throws
          if (age<17||age>24) {
             String msg = "Age is not between 17 and 24";
             AgeDoesnotMatchException ex = new AgeDoesnotMatchException(msg);
