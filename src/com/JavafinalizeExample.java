@@ -1,3 +1,5 @@
+package com.java8;
+
 public class JavafinalizeExample {
     public static void main(String[] args)
     {
