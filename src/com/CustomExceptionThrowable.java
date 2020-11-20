@@ -1,3 +1,7 @@
+package com;
+
+import java.util.Scanner;
+
 class AgeDoesnotMatchException extends Throwable{
    AgeDoesnotMatchException(String msg){
       super(msg);
