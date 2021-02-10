@@ -19,7 +19,7 @@ interface I2 {
 
 }
 
-public class InterfaceDefaultHandle implements I1,I2 {
+public class InterfaceDefaultHandle implements I1,I2 { //this will not compile without override method : display
 
     @Override
     public void display() {
