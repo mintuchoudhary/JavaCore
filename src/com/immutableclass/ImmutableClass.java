@@ -1,9 +1,6 @@
 package com.immutableclass;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /*
  * Hashcode and equals problem
@@ -15,15 +12,20 @@ final class Emp {
 	final private int id;
 	final private String name;
 	private final Add add;
+	private final Date date;
 
-	Emp(int id, String name, Add add) {
+	Emp(int id, String name, Add add, Date date) {
 		this.id = id;
 		this.name = name;
-
+        this.date=date;
 		Add a = new Add();
 		a.setCity(add.getCity());
-		this.add = a;
+		this.add = add;
 
+	}
+
+	public Date getDate() {
+		return date;
 	}
 
 	public int getId() {
@@ -45,7 +47,7 @@ final class Emp {
 
 	@Override
 	public String toString() {
-		return "Emp [id=" + id + ", name=" + name + ", add=" + add + "]";
+		return "Emp [id=" + id + ", name=" + name + ", add=" + add + " date="+date+"]";
 	}
 
 }
@@ -74,14 +76,15 @@ public class ImmutableClass {
 		Add a = new Add();
 		a.setCity("pune");
 
-		Emp e = new Emp(1, "mak", a);
+		Emp e = new Emp(1, "mak", a,new Date());
 
 		System.out.println(e);
 
 		// a.setCity("mumbai");
 
 		e.getAdd().setCity("delhi");
-
-		System.out.println(e);
+        Emp e1=e;
+		e1.getAdd().setCity("delhi");
+		System.out.println(e1);
 	}
 }
